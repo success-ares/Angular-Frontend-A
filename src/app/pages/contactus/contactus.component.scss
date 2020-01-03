@@ -1,0 +1,86 @@
+#banner-wrapper{
+    background: white;
+}
+.col-6.col-12-medium {
+    font-size: 7px;
+    color:black;
+    font-family: sans-serif;
+}
+.col-6.col-12-medium p{
+    font-size: 15px !important;
+    color: #000;
+    line-height: 2.35rem !important;
+}
+.col-6.col-12-medium h2{
+    margin-bottom: 20px !important;
+}
+.col-6.col-12-medium h2.second{
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+input {
+    color: black;
+    width: 100%;
+    padding: 5px;
+    font-size: 15px;
+    border-style: groove;
+    font-family: serif;
+}
+.col-6.col-12-medium.second .col-12{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+textarea{
+    width: 100%;
+    padding: 5px;
+    font-size: 15px;
+    color: black;
+    font-family: serif;
+}
+button {
+    font-size: 13px;
+    background: #e91e63;
+    min-height: 45px;
+}
+input:focus {
+    outline: none;
+}
+textarea:focus {
+    outline: none;
+}
+#footer-wrapper{
+    background: white;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+#footer.container{
+    padding: 63px;
+    font-family: sans-serif;
+    color: black;
+}
+#footer.container h2{
+    font-size: 30px;
+}
+#footer.container .col-3.col-6-medium.col-12-small{
+    padding-left: 20px;
+}
+#footer.container .col-3.col-6-medium.col-12-small h3{
+    font-size: 1.4em;
+    margin: 0 0 1em 0;
+    font-weight: 500;
+    background: gainsboro;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+@media only screen and (max-width: 980px) {
+    #footer.container{
+        padding-left : 42px;
+        padding-right : 42px;
+    }
+}
+@media only screen and (max-width: 736px) {
+    #footer.container{
+        padding-left : 0px;
+        padding-right : 0px;
+    }
+}

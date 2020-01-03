@@ -1,0 +1,21 @@
+#main-wrapper {
+    font-family: none; 
+    color: black;
+}
+.container .row h2 {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 40px;
+}
+.container .row p{
+    text-align: justify;
+    line-height: 2;
+}
+.row.people{
+    border-bottom: 2px solid;
+    margin-left: 0px;
+    margin-bottom: 40px;
+}
+.row.row.people p{
+    padding-left: 0px;
+}

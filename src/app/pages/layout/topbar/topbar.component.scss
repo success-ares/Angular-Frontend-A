@@ -1,0 +1,31 @@
+.topbarmySlides {display: none;}
+#main-wrapper{
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.topbarslideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 1}
+}

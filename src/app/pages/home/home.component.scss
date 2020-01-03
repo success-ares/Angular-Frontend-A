@@ -1,0 +1,430 @@
+@import '~swiper/dist/css/swiper.min.css';
+
+.mySlides {display: none;}
+.mySlides2 {
+    display: none;
+     max-height: 150px
+    }
+.mySlides2.leftslide img {
+    max-height: 150px;
+}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.leftslide {
+  -webkit-animation-name: leftslide;
+  -webkit-animation-duration: 0.5s;
+  animation-name: leftslide;
+  animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 1}
+}
+
+@-webkit-keyframes leftslide {
+    // from {margin-left: 100%} 
+    // to {margin-left: 0;}
+    from {opacity: 1} 
+    to {opacity: 1}
+  }
+  
+  @keyframes leftslide {
+    // from {margin-left: 100%} 
+    // to {margin-left: 0;}
+    from {opacity: 1} 
+    to {opacity: 1}
+  }
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 736px) {
+    #main-wrapper{
+        padding-left : 0px;
+        padding-right : 0px;
+    }
+}
+
+
+#main-wrapper{
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+#features-wrapper, #features-wrapper-3 {
+    background-color: white;
+    font-family: sans-serif;
+    color: black;
+}
+.brad-icon{
+    text-align: center;
+    background-color: #1f95f3;
+    max-width: 100px;
+    min-height: 100px;
+    border-radius: 50%;
+    padding-top: 34px;
+    margin: auto;
+    color: white;
+}
+.brad-icon .fa.fa-dollar{
+    font-size: 30px;
+}
+.box.feature .inner header h2{
+    text-align: center;
+}
+.box.feature p{
+    margin: 0;
+    text-align: justify;
+    line-height: 1.8rem;
+}
+#features-wrapper .box.feature:hover .brad-icon {
+    background-color: #e1f1ff;
+    color: #1f95f3;
+}
+#features-wrapper-flex{
+    background-color: rgba(4,43,82,1);
+    color: white;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+#features-wrapper-flex .box.feature{
+    background: none;
+}
+#features-wrapper-flex .box.feature .inner header h2 {
+    color: white;
+    font-size: 60px;
+    font-family: none;
+}
+#features-wrapper-flex .box.feature p {
+    text-align: center;
+}
+#features-wrapper-flex .box.feature:hover .brad-icon {
+    background-color: rgba(4,43,82,1);
+    color: rgba(4,43,82,1);
+}
+#features-wrapper-flex .brad-icon{
+    background-color: rgba(4,43,82,1);
+}
+#features-wrapper-flex .brad-icon.custom-1{
+    padding-top: 28px;
+}
+#features-wrapper-flex .brad-icon.custom-2{
+    padding-top: 24px;
+}
+#features-wrapper-flex .brad-icon.custom-3{
+    padding-top: 19px;
+}
+#features-wrapper-3 {
+    padding-top: 60px;
+}
+#features-wrapper-3 .brad-icon {
+    margin-left: 10px;
+    background-color: white;
+}
+#features-wrapper-3 .box.feature .inner header h2 {
+    text-align: left;
+}
+#features-wrapper-4 {
+    padding-top: 0px;
+    background-color: white;
+    color: black;
+    font-family: sans-serif;
+
+}
+#features-wrapper-4 .brad-icon {
+    margin-left: 10px;
+    background-color: white;
+    
+}
+#features-wrapper-4 .box.feature .inner header h2 {
+    text-align: left;
+}
+
+
+.carousel {
+  height: 300px;
+  width: 400px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  padding: 0;
+  list-style: none;
+}
+.carousel__controls,
+.carousel__activator {
+  display: none;
+}
+.carousel__activator:nth-of-type(1):checked ~ .carousel__track {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+.carousel__activator:nth-of-type(1):checked ~ .carousel__slide:nth-of-type(1) {
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.carousel__activator:nth-of-type(1):checked ~ .carousel__controls:nth-of-type(1) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(1):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(1) {
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(2):checked ~ .carousel__track {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+.carousel__activator:nth-of-type(2):checked ~ .carousel__slide:nth-of-type(2) {
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.carousel__activator:nth-of-type(2):checked ~ .carousel__controls:nth-of-type(2) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2) {
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(3):checked ~ .carousel__track {
+  -webkit-transform: translateX(-200%);
+          transform: translateX(-200%);
+}
+.carousel__activator:nth-of-type(3):checked ~ .carousel__slide:nth-of-type(3) {
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.carousel__activator:nth-of-type(3):checked ~ .carousel__controls:nth-of-type(3) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(3):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(3) {
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(4):checked ~ .carousel__track {
+  -webkit-transform: translateX(-300%);
+          transform: translateX(-300%);
+}
+.carousel__activator:nth-of-type(4):checked ~ .carousel__slide:nth-of-type(4) {
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.carousel__activator:nth-of-type(4):checked ~ .carousel__controls:nth-of-type(4) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(4):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(4) {
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(5):checked ~ .carousel__track {
+  -webkit-transform: translateX(-400%);
+          transform: translateX(-400%);
+}
+.carousel__activator:nth-of-type(5):checked ~ .carousel__slide:nth-of-type(5) {
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.carousel__activator:nth-of-type(5):checked ~ .carousel__controls:nth-of-type(5) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(5):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(5) {
+  opacity: 1;
+}
+.carousel__control {
+  height: 30px;
+  width: 30px;
+  margin-top: -15px;
+  top: 50%;
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  border-width: 5px 5px 0 0;
+  border-style: solid;
+  border-color: #fafafa;
+  opacity: 0.35;
+  outline: 0;
+  z-index: 3;
+}
+.carousel__control:hover {
+  opacity: 1;
+}
+.carousel__control--backward {
+  left: 10px;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+.carousel__control--forward {
+  right: 10px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.carousel__indicators {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+.carousel__indicator {
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  display: inline-block;
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0.35;
+  margin: 0 2.5px 0 2.5px;
+}
+.carousel__indicator:hover {
+  opacity: 0.75;
+}
+.carousel__track {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  transition: -webkit-transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+}
+.carousel__track .carousel__slide {
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+.carousel__track .carousel__slide:nth-of-type(1) {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+.carousel__track .carousel__slide:nth-of-type(2) {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+.carousel__track .carousel__slide:nth-of-type(3) {
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+}
+.carousel__track .carousel__slide:nth-of-type(4) {
+  -webkit-transform: translateX(300%);
+          transform: translateX(300%);
+}
+.carousel__track .carousel__slide:nth-of-type(5) {
+  -webkit-transform: translateX(400%);
+          transform: translateX(400%);
+}
+.carousel--scale .carousel__slide {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+.carousel__slide {
+  height: 100%;
+  position: absolute;
+  overflow-y: auto;
+  opacity: 0;
+}
+/**
+  * Theming
+*/
+* {
+  box-sizing: border-box;
+}
+.carousel-container {
+  display: inline-block;
+  width: 100%;
+}
+.my-carousel {
+  margin: 0px;
+  width: 100%;
+  height: 170px;
+}
+.carousel__slide {
+  overflow: hidden;
+}
+.carousel--thumb .carousel__indicator {
+  height: 30px;
+  width: 30px;
+}
+
+.carousel__indicator {
+  background-color: #fafafa;
+}
+.carousel__slide:nth-of-type(1),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(1) {
+  background-image: url("/assets/img/home/carousel-mark/markslider1.png");
+  background-size: cover;
+  background-position: center;
+}
+.carousel__slide:nth-of-type(2),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(2) {
+  background-image: url("/assets/img/home/carousel-mark/markslider2.png");
+  background-size: cover;
+  background-position: center;
+}
+.carousel__slide:nth-of-type(3),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(3) {
+  background-image: url("/assets/img/home/carousel-mark/markslider3.png");
+  background-size: cover;
+  background-position: center;
+}
+.carousel__slide:nth-of-type(4),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(4) {
+  background-image: url("/assets/img/home/carousel-mark/markslider4.png");
+  background-size: cover;
+  background-position: center;
+}
